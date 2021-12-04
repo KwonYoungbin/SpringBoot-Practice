@@ -1,0 +1,8 @@
+스프링부트에서 라이브러리 의존성을 추가하기 위해서는 pom.xml 파일에 다음과 같이 스타터를 이용해 추가하거나
+이클립스를 이용하여 pom.xml의 dependencies 내부에서 'ctrl' + 'space' 를 통해 추가할 수 있다
+
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+    <version>5.6.1.Final</version>
+</dependency>
