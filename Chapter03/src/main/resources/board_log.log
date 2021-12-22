@@ -1,0 +1,40 @@
+2021-12-22 11:50:52.522  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 11:50:52.523  INFO 15148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 11:50:52.523  INFO 15148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 11:50:52.533  INFO 15148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 11:50:52.534  INFO 15148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 121 ms
+2021-12-22 11:50:52.580  INFO 15148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 11:50:52.586  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 11:50:52.589  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
+2021-12-22 11:50:52.590 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
+2021-12-22 11:50:52.592  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-22 11:50:59.238  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 11:50:59.239  INFO 15148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 11:50:59.239  INFO 15148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 11:50:59.248  INFO 15148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 11:50:59.248  INFO 15148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 99 ms
+2021-12-22 11:50:59.299  INFO 15148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 11:50:59.305  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 11:50:59.308  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
+2021-12-22 11:50:59.308 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
+2021-12-22 11:50:59.309  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-22 11:51:15.142  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 11:51:15.143  INFO 15148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 11:51:15.143  INFO 15148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 11:51:15.151  INFO 15148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 11:51:15.151  INFO 15148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 92 ms
+2021-12-22 11:51:15.185  INFO 15148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 11:51:15.190  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 11:51:15.192  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
+2021-12-22 11:51:15.193 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
+2021-12-22 11:51:15.193  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-22 11:51:30.053  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 11:51:30.054  INFO 15148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 11:51:30.054  INFO 15148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 11:51:30.063  INFO 15148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 11:51:30.063  INFO 15148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 101 ms
+2021-12-22 11:51:30.095  INFO 15148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 11:51:30.099  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 11:51:30.102  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
+2021-12-22 11:51:30.102 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
+2021-12-22 11:51:30.103  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
