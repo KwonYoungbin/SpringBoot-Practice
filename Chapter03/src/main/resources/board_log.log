@@ -38,3 +38,30 @@
 2021-12-22 11:51:30.102  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
 2021-12-22 11:51:30.102 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
 2021-12-22 11:51:30.103  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-22 11:51:40.854  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 11:51:40.854  INFO 15148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 11:51:40.854  INFO 15148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 11:51:40.864  INFO 15148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 11:51:40.864  INFO 15148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 87 ms
+2021-12-22 11:51:40.893  INFO 15148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 11:51:40.897  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 11:51:40.900  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
+2021-12-22 11:51:40.900 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
+2021-12-22 11:51:40.900  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-22 11:57:45.363  INFO 15148 --- [restartedMain] com.springbootTest.Chapter03Application  : Starting Chapter03Application using Java 17.0.1 on DESKTOP-7KG7BE2 with PID 15148 (C:\Users\yb951\git\SpringBoot-Practice\Chapter03\target\classes started by yb951 in C:\Users\yb951\git\SpringBoot-Practice\Chapter03)
+2021-12-22 11:57:45.364 DEBUG 15148 --- [restartedMain] com.springbootTest.Chapter03Application  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-22 11:57:45.364  INFO 15148 --- [restartedMain] com.springbootTest.Chapter03Application  : No active profile set, falling back to default profiles: default
+2021-12-22 11:57:45.439  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 11:57:45.440  INFO 15148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 11:57:45.440  INFO 15148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 11:57:45.446  INFO 15148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 11:57:45.447  INFO 15148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 82 ms
+2021-12-22 11:57:45.475  INFO 15148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 11:57:45.479  INFO 15148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 11:57:45.481  INFO 15148 --- [restartedMain] com.springbootTest.Chapter03Application  : Started Chapter03Application in 0.153 seconds (JVM running for 542.616)
+2021-12-22 11:57:45.482 DEBUG 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : DEBUG 로그 메세지
+2021-12-22 11:57:45.482  INFO 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : INFO 로그 메세지
+2021-12-22 11:57:45.482  WARN 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : WARN 로그 메세지
+2021-12-22 11:57:45.482 ERROR 15148 --- [restartedMain] com.springbootTest.LoggingRunner         : ERROR 로그 메세지
+2021-12-22 11:57:45.483  INFO 15148 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-22 12:08:43.158  INFO 15148 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

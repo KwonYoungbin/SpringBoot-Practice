@@ -1,0 +1,10 @@
+2021:12:22 12:09:54.161 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:09:54.163 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:11:41.889 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:11:41.889 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:11:43.514 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:11:43.514 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:11:47.202 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:11:47.203 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:11:51.897 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:11:51.897 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
