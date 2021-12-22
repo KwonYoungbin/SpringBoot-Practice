@@ -1,0 +1,5 @@
+프로젝트를 패키징하기 위해서는 프로젝트 우클릭 -> [Run As] -> [Maven install] 클릭하여 target 폴더에 .jar 형식의 파일 생성
+	이후 jar 파일을 실행시키기 위해서 .jar 파일을 우클릭 -> [Show in Local Terminal] -> [Terminal] 을 누르고,
+	>> java -jar ~~~~.jar 로 실행시킨 이후 로컬에서 확인.
+	
+패키징을 통해 생성된 임시 파일과 폴더들을 target 폴더에서 지우기 위해서는 프로젝트 우클릭 -> [Run As] -> [Maven clean]실행

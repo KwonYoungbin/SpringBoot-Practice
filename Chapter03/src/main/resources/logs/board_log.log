@@ -8,3 +8,15 @@
 2021:12:22 12:11:47.203 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
 2021:12:22 12:11:51.897 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
 2021:12:22 12:11:51.897 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:12:16.646 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:12:16.646 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:15:06.289 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:15:06.289 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:15:09.969 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:15:09.969 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
+2021:12:22 12:15:18.729 WARN  --- [main] com.springbootTest.LoggingRunner : WARN �α� �޼��� 
+2021:12:22 12:15:18.732 ERROR --- [main] com.springbootTest.LoggingRunner : ERROR �α� �޼��� 
+2021:12:22 12:15:19.341 WARN  --- [main] com.springbootTest.LoggingRunner : WARN �α� �޼��� 
+2021:12:22 12:15:19.342 ERROR --- [main] com.springbootTest.LoggingRunner : ERROR �α� �޼��� 
+2021:12:22 12:16:04.442 WARN  --- [restartedMain] com.springbootTest.LoggingRunner : WARN 로그 메세지 
+2021:12:22 12:16:04.442 ERROR --- [restartedMain] com.springbootTest.LoggingRunner : ERROR 로그 메세지 
