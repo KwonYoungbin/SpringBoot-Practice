@@ -2,6 +2,7 @@ package com.springbootTest.persistence;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 
@@ -20,6 +21,6 @@ public interface BoardRepository extends CrudRepository<Board, Long> {
 	// 데이터 정렬하기
 	List<Board> findByTitleContainingOrderBySeqDesc(String searchKeyword);
 	
-	// 페이징 처리
-	List<Board> findByTitleContaining(String searchKeyword, Pageable paging);
+	// 페이징 처리 및 리턴 타입 변경(List -> Page)
+	Page<Board> findByTitleContaining(String searchKeyword, Pageable paging);
 }

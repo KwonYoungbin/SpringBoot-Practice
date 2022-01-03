@@ -6,6 +6,7 @@ import java.util.List;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -87,9 +88,22 @@ public class QueryMethodTest {
 	// 페이징 처리와 함께 데이터 정렬해서 출력하는 방법
 	@Test
 	public void testFindByTitleContaining() {
-		Pageable paging = PageRequest.of(0, 5, Sort.Direction.DESC, "seq");
-		List<Board> boardList = boardRepo.findByTitleContaining("제목", paging);
+		// List 타입으로 페이징 및 정렬 처리
+//		Pageable paging = PageRequest.of(0, 5, Sort.Direction.DESC, "seq");
+//		List<Board> boardList = boardRepo.findByTitleContaining("제목", paging);
 		
+		// Page 타입으로 페이징 및 정렬 처리
+		Pageable paging = PageRequest.of(0,  5, Sort.Direction.DESC, "seq");
+		Page<Board> pageInfo = boardRepo.findByTitleContaining("제목", paging);
+		
+		System.out.println("PAGE SIZE : "+pageInfo.getSize());
+		System.out.println("TOTAL PAGES : "+pageInfo.getTotalPages());
+		System.out.println("TOTAL COUNT : "+pageInfo.getTotalElements());
+		System.out.println("NEXT : "+pageInfo.nextPageable());
+		
+		List<Board> boardList = pageInfo.getContent();
+		
+		// 출력
 		System.out.println("검색 결과");
 		for (Board board : boardList) {
 			System.out.println("---> " + board.toString());
