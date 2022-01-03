@@ -38,4 +38,12 @@ public interface BoardRepository extends CrudRepository<Board, Long> {
 	// 특정 변수만 조회(이때 List의 타입은 엔티티 객체가 아닌 Object[]로 해야함
 	@Query("SELECT b.seq, b.title, b.writer, b.createDate FROM Board b WHERE b.title like %?1% ORDER BY b.seq DESC")
 	List<Object[]> queryAnnotationTest2(String searchKeyword);
+	
+	// 네이티브 쿼리 사용
+	@Query(value="select seq, title, writer, create_date from board where title like '%'||?1||'%' order by seq desc", nativeQuery = true)
+	List<Object[]> queryAnnotationTest3(String searchKeyword);
+	
+	// Query 어노테이션을 이용한 페이징과 정렬처리
+	@Query("SELECT b FROM Board b ORDER BY b.seq DESC")
+	List<Board> queryAnnotationTest4(Pageable paging);
 }
