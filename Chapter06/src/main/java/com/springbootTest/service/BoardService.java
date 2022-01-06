@@ -8,7 +8,7 @@ public interface BoardService {
 
 	List<Board> getBoardList(Board board);
 
-	void inserBoard(Board board);
+	void insertBoard(Board board);
 
 	Board getBoard(Board board);
 
