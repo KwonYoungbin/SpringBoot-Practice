@@ -56,6 +56,11 @@ public class BoardController {
 		return "forward:getBoardList";
 	}
 	
+	@GetMapping("/hello")
+	public void hello(Model model) {
+		model.addAttribute("greeting", "Hello 타임리프.^^");
+	}
+	
 	
 //	JPA 연동 없이 단순 화면 구성
 //	@RequestMapping("/getBoardList")
