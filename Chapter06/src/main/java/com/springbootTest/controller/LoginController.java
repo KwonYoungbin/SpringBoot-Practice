@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import com.springbootTest.domain.Member;
 import com.springbootTest.service.MemberService;
@@ -31,5 +32,11 @@ public class LoginController {
 		} else {
 			return "redirect:login";
 		}
+	}
+	
+	@GetMapping("/logout")
+	public String logout(SessionStatus status) {
+		status.setComplete();
+		return "redirect:index.html";
 	}
 }
