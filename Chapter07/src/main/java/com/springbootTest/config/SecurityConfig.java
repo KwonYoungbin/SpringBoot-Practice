@@ -20,6 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 //		security.formLogin();
 		security.formLogin().loginPage("/login").defaultSuccessUrl("/loginSuccess", true);
 		security.exceptionHandling().accessDeniedPage("/accessDenied");
+		security.logout().invalidateHttpSession(true).logoutSuccessUrl("/login");
 	}
 	
 	@Autowired
