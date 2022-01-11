@@ -12,7 +12,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
-	private DataSource dataSource;
+	private BoardUserDetailsService boardUserDetailsService;
+	
+//	데이터베이스에서 소스를 읽어오기 위한 변수
+//	@Autowired
+//	private DataSource dataSource;
 	
 	@Override
 	protected void configure(HttpSecurity security) throws Exception{
@@ -26,6 +30,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		security.formLogin().loginPage("/login").defaultSuccessUrl("/loginSuccess", true);
 		security.exceptionHandling().accessDeniedPage("/accessDenied");
 		security.logout().invalidateHttpSession(true).logoutSuccessUrl("/login");
+		
+		security.userDetailsService(boardUserDetailsService);
 	}
 	
 //	메모리에 사용자 정보 생성
@@ -41,16 +47,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 //		password("{noop}admin123").
 //		roles("ADMIN");
 //	}
-	
-	@Autowired
-	public void authenticate(AuthenticationManagerBuilder auth) throws Exception{
-		String query1 = "select id username, concat('{noop}', password) password, true enabled from member where id=?";
-		String query2 = "select id, role from member where id=?";
-		
-		auth.jdbcAuthentication()
-		.dataSource(dataSource)
-		.usersByUsernameQuery(query1)
-		.authoritiesByUsernameQuery(query2);
-		System.out.println("HELLO");
-	}
+
+//	단순 데이터베이스만을 이용해서 인증할 경우
+//	@Autowired
+//	public void authenticate(AuthenticationManagerBuilder auth) throws Exception{
+//		String query1 = "select id username, concat('{noop}', password) password, true enabled from member where id=?";
+//		String query2 = "select id, role from member where id=?";
+//		
+//		auth.jdbcAuthentication()
+//		.dataSource(dataSource)
+//		.usersByUsernameQuery(query1)
+//		.authoritiesByUsernameQuery(query2);
+//		System.out.println("HELLO");
+//	}
 }
