@@ -22,7 +22,7 @@ import lombok.ToString;
 public class Board {
 	@Id
 	@GeneratedValue
-	private Long Seq;
+	private Long seq;
 	
 	private String title;
 	
