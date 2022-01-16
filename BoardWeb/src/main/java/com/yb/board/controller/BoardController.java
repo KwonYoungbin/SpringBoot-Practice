@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.yb.board.domain.Board;
+import com.yb.board.domain.Search;
 import com.yb.board.security.SecurityUser;
 import com.yb.board.service.BoardService;
 
@@ -19,9 +20,22 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
+//	원래 버전
+//	@RequestMapping("/getBoardList")
+//	public String getBoardList(Model model, Board board) {
+//		Page<Board> boardList = boardService.getBoardList(board);
+//		model.addAttribute("boardList", boardList);
+//		return "board/getBoardList";
+//	}
+	
+//	검색 기능 추가 버전
 	@RequestMapping("/getBoardList")
-	public String getBoardList(Model model, Board board) {
-		Page<Board> boardList = boardService.getBoardList(board);
+	public String getBoardList(Model model, Search search) {
+		if(search.getSearchCondition() == null)
+			search.setSearchCondition("TITLE");
+		if(search.getSearchKeyword() == null)
+			search.setSearchKeyword("");
+		Page<Board> boardList = boardService.getBoardList(search);
 		model.addAttribute("boardList", boardList);
 		return "board/getBoardList";
 	}
