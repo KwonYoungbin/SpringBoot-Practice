@@ -31,6 +31,6 @@ public class MemberController {
 		member.setEnable(true);
 		member.setRole(Role.ROLE_MEMBER);
 		memberService.insertMember(member);
-		return "redirect:login";
+		return "redirect:/";
 	}
 }
