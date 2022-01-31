@@ -20,21 +20,21 @@ public class TodoController {
 	@Autowired
 	private TodoService service;
 	
-	@GetMapping("/testTodo")
-	public ResponseEntity<?> testTodo(){
-		String id = "777";
-		String title = "SUCCESS";
-		boolean done = true;
-		TodoDTO response = TodoDTO.builder().id(id).title(title).done(done).build();
-		return ResponseEntity.ok().body(response);
-	}
+//	@GetMapping("/testTodo")
+//	public ResponseEntity<?> testTodo(){
+//		String id = "777";
+//		String title = "SUCCESS";
+//		boolean done = true;
+//		TodoDTO response = TodoDTO.builder().id(id).title(title).done(done).build();
+//		return ResponseEntity.ok().body(response);
+//	}
 	
-	@GetMapping("/test")
-	public ResponseEntity<?> testTodoService(){
-		String str = service.testService();
-		List<String> list = new ArrayList<>();
-		list.add(str);
-		ResponseDTO<String> response = ResponseDTO.<String>builder().data(list).build();
-		return ResponseEntity.ok().body(response);
-	}
+//	@GetMapping("/test")
+//	public ResponseEntity<?> testTodoService(){
+//		String str = service.testService();
+//		List<String> list = new ArrayList<>();
+//		list.add(str);
+//		ResponseDTO<String> response = ResponseDTO.<String>builder().data(list).build();
+//		return ResponseEntity.ok().body(response);
+//	}
 }
