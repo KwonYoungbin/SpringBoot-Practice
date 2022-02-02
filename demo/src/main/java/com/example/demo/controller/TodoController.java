@@ -24,7 +24,7 @@ public class TodoController {
 	@Autowired
 	private TodoService service;
 	
-	@PostMapping
+	@PostMapping("/create")
 	public ResponseEntity<?> createTodo(@RequestBody TodoDTO dto){
 		try {
 			String temporaryUserId = "temporary-user";
@@ -55,6 +55,22 @@ public class TodoController {
 			ResponseDTO<TodoDTO> response = ResponseDTO.<TodoDTO>builder().error(error).build();
 			return ResponseEntity.badRequest().body(response);
 		}
+	}
+	
+	@GetMapping("/retrieve")
+	public ResponseEntity<?> retrieveTodoList(){
+		String temporaryUserId = "temporary-user";
+		
+		// (1) 서비스 메서드의 retrieve() 메서드를 사용해 Todo 리스트를 가져온다.
+		List<TodoEntity> entities = service.retrieve(temporaryUserId);
+		
+		// (2) 자바 스트림을 이용해 리턴된 엔티티 리스트를 TodoDTO 리스트로 변환한다.
+		List<TodoDTO> dtos = entities.stream().map(TodoDTO::new).collect(Collectors.toList());
+		
+		// (3) 변환된 TodoDTO 리스트를 이용해 ResponseDTO를 초기화한다.
+		ResponseDTO<TodoDTO> response = ResponseDTO.<TodoDTO>builder().data(dtos).build();
+		
+		return ResponseEntity.ok().body(response);
 	}
 	
 //	@GetMapping("/testTodo")
